@@ -1,5 +1,5 @@
 # Grailed-Code-Challenge
-iOS app for CrushAndLovelyCodingTest
+iOS app for Grailed-Code-Challenge
 
 Setup Instructions:
 

@@ -124,13 +124,8 @@ class BrowseItemsViewController: UIViewController,
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
         if offsetY > contentHeight - scrollView.frame.size.height {
-
-            if let  indexPath = browseItemCollectionView.indexPathsForVisibleItems.last {
-                    viewModel.loadItemDataAndIncreaseDataAmount()
-                    browseItemCollectionView.reloadData()
-
-            }
-
+                viewModel.loadItemDataAndIncreaseDataAmount()
+                browseItemCollectionView.reloadData()
         }
     }
 }
