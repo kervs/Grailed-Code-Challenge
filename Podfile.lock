@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.3.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - CSStickyHeaderFlowLayout (0.2.11)
+  - Reveal-iOS-SDK (1.6.2)
+  - SnapKit (3.1.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - CSStickyHeaderFlowLayout
+  - Reveal-iOS-SDK
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  CSStickyHeaderFlowLayout: e9bcb1762413f49d7d09e5bd0ae5efd1100116b7
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+
+PODFILE CHECKSUM: 3b1b81b5f1f56af66a4bf364ff555ed42483b237
+
+COCOAPODS: 1.2.0.beta.3

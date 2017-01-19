@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0579CE022F0DE868A6DF49A5 /* Pods_Grailed_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169BBD113804EE947A428620 /* Pods_Grailed_Code_ChallengeTests.framework */; };
 		3B83EE741E2EE070009B9E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EE731E2EE070009B9E91 /* AppDelegate.swift */; };
-		3B83EE761E2EE070009B9E91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EE751E2EE070009B9E91 /* ViewController.swift */; };
-		3B83EE791E2EE070009B9E91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B83EE771E2EE070009B9E91 /* Main.storyboard */; };
 		3B83EE7B1E2EE070009B9E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B83EE7A1E2EE070009B9E91 /* Assets.xcassets */; };
 		3B83EE7E1E2EE070009B9E91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B83EE7C1E2EE070009B9E91 /* LaunchScreen.storyboard */; };
 		3B83EE891E2EE070009B9E91 /* Grailed_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EE881E2EE070009B9E91 /* Grailed_Code_ChallengeTests.swift */; };
 		3B83EE941E2EE070009B9E91 /* Grailed_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EE931E2EE070009B9E91 /* Grailed_Code_ChallengeUITests.swift */; };
+		3B83EEA21E2EE12B009B9E91 /* BrowseItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EEA11E2EE12B009B9E91 /* BrowseItemViewModel.swift */; };
+		3B83EEA41E2EE2B6009B9E91 /* BrowseItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EEA31E2EE2B6009B9E91 /* BrowseItemsViewController.swift */; };
+		3B83EEA61E2EE3A8009B9E91 /* DetailViewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EEA51E2EE3A8009B9E91 /* DetailViewItemViewController.swift */; };
+		3B83EEAD1E2EE4FF009B9E91 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EEAC1E2EE4FF009B9E91 /* Item.swift */; };
+		3B83EEB11E2EE6B7009B9E91 /* BrowseViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EEB01E2EE6B7009B9E91 /* BrowseViewHeader.swift */; };
+		3B83EEB31E2EE7A1009B9E91 /* BrowseItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EEB21E2EE7A1009B9E91 /* BrowseItemViewCell.swift */; };
+		3B83EEB71E3008C4009B9E91 /* BrowseItemCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EEB61E3008C4009B9E91 /* BrowseItemCollectionView.swift */; };
+		3B83EEB91E30206B009B9E91 /* DetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EEB81E30206B009B9E91 /* DetailItemView.swift */; };
+		3B8892531E313F3E0046815D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8892521E313F3E0046815D /* Image.swift */; };
+		3BAADA391E3150C00086298F /* DetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAADA381E3150C00086298F /* DetailCellView.swift */; };
+		5A532E667EAE55A94971D920 /* Pods_Grailed_Code_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1086131F109826D6C4E44F2 /* Pods_Grailed_Code_Challenge.framework */; };
+		F327FD1B9CD96518FC72624C /* Pods_Grailed_Code_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77991EAE58B37D62B0E79814 /* Pods_Grailed_Code_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15EC4C19F6E74BE6ED5E3137 /* Pods-Grailed Code ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grailed Code ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grailed Code ChallengeTests/Pods-Grailed Code ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		169BBD113804EE947A428620 /* Pods_Grailed_Code_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grailed_Code_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29AA50BC6F84C36E97CFE917 /* Pods-Grailed Code Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grailed Code Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grailed Code Challenge/Pods-Grailed Code Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		3B83EE701E2EE070009B9E91 /* Grailed Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grailed Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B83EE731E2EE070009B9E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B83EE751E2EE070009B9E91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3B83EE781E2EE070009B9E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B83EE7A1E2EE070009B9E91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B83EE7D1E2EE070009B9E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B83EE7F1E2EE070009B9E91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +59,22 @@
 		3B83EE8F1E2EE070009B9E91 /* Grailed Code ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grailed Code ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B83EE931E2EE070009B9E91 /* Grailed_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grailed_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
 		3B83EE951E2EE070009B9E91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B83EEA11E2EE12B009B9E91 /* BrowseItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseItemViewModel.swift; sourceTree = "<group>"; };
+		3B83EEA31E2EE2B6009B9E91 /* BrowseItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseItemsViewController.swift; sourceTree = "<group>"; };
+		3B83EEA51E2EE3A8009B9E91 /* DetailViewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewItemViewController.swift; sourceTree = "<group>"; };
+		3B83EEAC1E2EE4FF009B9E91 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3B83EEB01E2EE6B7009B9E91 /* BrowseViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrowseViewHeader.swift; path = "../../../../Dropbox (Often)/BrowseViewHeader.swift"; sourceTree = "<group>"; };
+		3B83EEB21E2EE7A1009B9E91 /* BrowseItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseItemViewCell.swift; sourceTree = "<group>"; };
+		3B83EEB61E3008C4009B9E91 /* BrowseItemCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseItemCollectionView.swift; sourceTree = "<group>"; };
+		3B83EEB81E30206B009B9E91 /* DetailItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailItemView.swift; sourceTree = "<group>"; };
+		3B8892521E313F3E0046815D /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		3BAADA381E3150C00086298F /* DetailCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCellView.swift; sourceTree = "<group>"; };
+		778EF0DAB945E9852705DCEE /* Pods-Grailed Code ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grailed Code ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grailed Code ChallengeUITests/Pods-Grailed Code ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		77991EAE58B37D62B0E79814 /* Pods_Grailed_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grailed_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA4CC077A7BB10CA4FF4A35 /* Pods-Grailed Code Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grailed Code Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grailed Code Challenge/Pods-Grailed Code Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		B1086131F109826D6C4E44F2 /* Pods_Grailed_Code_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grailed_Code_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB43C791E7E9AE660D8358E /* Pods-Grailed Code ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grailed Code ChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grailed Code ChallengeTests/Pods-Grailed Code ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D29A053F684BBA5ECBFF6468 /* Pods-Grailed Code ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grailed Code ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grailed Code ChallengeUITests/Pods-Grailed Code ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A532E667EAE55A94971D920 /* Pods_Grailed_Code_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0579CE022F0DE868A6DF49A5 /* Pods_Grailed_Code_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F327FD1B9CD96518FC72624C /* Pods_Grailed_Code_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +112,8 @@
 				3B83EE871E2EE070009B9E91 /* Grailed Code ChallengeTests */,
 				3B83EE921E2EE070009B9E91 /* Grailed Code ChallengeUITests */,
 				3B83EE711E2EE070009B9E91 /* Products */,
+				69804C93CC0C88529F839CAF /* Pods */,
+				90C24B5B16AA354B30A2C25D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				3B83EE731E2EE070009B9E91 /* AppDelegate.swift */,
-				3B83EE751E2EE070009B9E91 /* ViewController.swift */,
-				3B83EE771E2EE070009B9E91 /* Main.storyboard */,
+				3B83EEAF1E2EE5B6009B9E91 /* Views */,
+				3B83EEAB1E2EE4A4009B9E91 /* Models */,
+				3B83EEAA1E2EE406009B9E91 /* View Models */,
+				3B83EEA71E2EE3B9009B9E91 /* View Controllers */,
 				3B83EE7A1E2EE070009B9E91 /* Assets.xcassets */,
 				3B83EE7C1E2EE070009B9E91 /* LaunchScreen.storyboard */,
 				3B83EE7F1E2EE070009B9E91 /* Info.plist */,
@@ -125,6 +160,67 @@
 			path = "Grailed Code ChallengeUITests";
 			sourceTree = "<group>";
 		};
+		3B83EEA71E2EE3B9009B9E91 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B83EEA31E2EE2B6009B9E91 /* BrowseItemsViewController.swift */,
+				3B83EEA51E2EE3A8009B9E91 /* DetailViewItemViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3B83EEAA1E2EE406009B9E91 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B83EEA11E2EE12B009B9E91 /* BrowseItemViewModel.swift */,
+			);
+			name = "View Models";
+			sourceTree = "<group>";
+		};
+		3B83EEAB1E2EE4A4009B9E91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B83EEAC1E2EE4FF009B9E91 /* Item.swift */,
+				3B8892521E313F3E0046815D /* Image.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3B83EEAF1E2EE5B6009B9E91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B83EEB01E2EE6B7009B9E91 /* BrowseViewHeader.swift */,
+				3B83EEB21E2EE7A1009B9E91 /* BrowseItemViewCell.swift */,
+				3B83EEB61E3008C4009B9E91 /* BrowseItemCollectionView.swift */,
+				3B83EEB81E30206B009B9E91 /* DetailItemView.swift */,
+				3BAADA381E3150C00086298F /* DetailCellView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		69804C93CC0C88529F839CAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29AA50BC6F84C36E97CFE917 /* Pods-Grailed Code Challenge.debug.xcconfig */,
+				9FA4CC077A7BB10CA4FF4A35 /* Pods-Grailed Code Challenge.release.xcconfig */,
+				CDB43C791E7E9AE660D8358E /* Pods-Grailed Code ChallengeTests.debug.xcconfig */,
+				15EC4C19F6E74BE6ED5E3137 /* Pods-Grailed Code ChallengeTests.release.xcconfig */,
+				778EF0DAB945E9852705DCEE /* Pods-Grailed Code ChallengeUITests.debug.xcconfig */,
+				D29A053F684BBA5ECBFF6468 /* Pods-Grailed Code ChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90C24B5B16AA354B30A2C25D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1086131F109826D6C4E44F2 /* Pods_Grailed_Code_Challenge.framework */,
+				169BBD113804EE947A428620 /* Pods_Grailed_Code_ChallengeTests.framework */,
+				77991EAE58B37D62B0E79814 /* Pods_Grailed_Code_ChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B83EE981E2EE070009B9E91 /* Build configuration list for PBXNativeTarget "Grailed Code Challenge" */;
 			buildPhases = (
+				F68C09677756D5351E73212E /* [CP] Check Pods Manifest.lock */,
 				3B83EE6C1E2EE06F009B9E91 /* Sources */,
 				3B83EE6D1E2EE06F009B9E91 /* Frameworks */,
 				3B83EE6E1E2EE06F009B9E91 /* Resources */,
+				B7CD06972FB60C8777BFA204 /* [CP] Embed Pods Frameworks */,
+				B4070E41CE5A73825B47CC1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B83EE9B1E2EE070009B9E91 /* Build configuration list for PBXNativeTarget "Grailed Code ChallengeTests" */;
 			buildPhases = (
+				E7CCCCC67F8CFF5F25ACCE7C /* [CP] Check Pods Manifest.lock */,
 				3B83EE801E2EE070009B9E91 /* Sources */,
 				3B83EE811E2EE070009B9E91 /* Frameworks */,
 				3B83EE821E2EE070009B9E91 /* Resources */,
+				B5C99462F9331EF82B7C73B4 /* [CP] Embed Pods Frameworks */,
+				808744E63783760B293CAF4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B83EE9E1E2EE070009B9E91 /* Build configuration list for PBXNativeTarget "Grailed Code ChallengeUITests" */;
 			buildPhases = (
+				C84D1310C2111274421D7E50 /* [CP] Check Pods Manifest.lock */,
 				3B83EE8B1E2EE070009B9E91 /* Sources */,
 				3B83EE8C1E2EE070009B9E91 /* Frameworks */,
 				3B83EE8D1E2EE070009B9E91 /* Resources */,
+				5E69AE9BA7822F6FD3B9EE04 /* [CP] Embed Pods Frameworks */,
+				C76D9594BDB1B8C96E71E937 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,7 +342,6 @@
 			files = (
 				3B83EE7E1E2EE070009B9E91 /* LaunchScreen.storyboard in Resources */,
 				3B83EE7B1E2EE070009B9E91 /* Assets.xcassets in Resources */,
-				3B83EE791E2EE070009B9E91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +361,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E69AE9BA7822F6FD3B9EE04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grailed Code ChallengeUITests/Pods-Grailed Code ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		808744E63783760B293CAF4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grailed Code ChallengeTests/Pods-Grailed Code ChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4070E41CE5A73825B47CC1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grailed Code Challenge/Pods-Grailed Code Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C99462F9331EF82B7C73B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grailed Code ChallengeTests/Pods-Grailed Code ChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7CD06972FB60C8777BFA204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grailed Code Challenge/Pods-Grailed Code Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76D9594BDB1B8C96E71E937 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grailed Code ChallengeUITests/Pods-Grailed Code ChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C84D1310C2111274421D7E50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7CCCCC67F8CFF5F25ACCE7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F68C09677756D5351E73212E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B83EE6C1E2EE06F009B9E91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B83EE761E2EE070009B9E91 /* ViewController.swift in Sources */,
+				3B83EEB11E2EE6B7009B9E91 /* BrowseViewHeader.swift in Sources */,
+				3B83EEB71E3008C4009B9E91 /* BrowseItemCollectionView.swift in Sources */,
+				3B83EEA21E2EE12B009B9E91 /* BrowseItemViewModel.swift in Sources */,
+				3B83EEA61E2EE3A8009B9E91 /* DetailViewItemViewController.swift in Sources */,
+				3B83EEB91E30206B009B9E91 /* DetailItemView.swift in Sources */,
+				3BAADA391E3150C00086298F /* DetailCellView.swift in Sources */,
+				3B83EEA41E2EE2B6009B9E91 /* BrowseItemsViewController.swift in Sources */,
+				3B83EEAD1E2EE4FF009B9E91 /* Item.swift in Sources */,
 				3B83EE741E2EE070009B9E91 /* AppDelegate.swift in Sources */,
+				3B83EEB31E2EE7A1009B9E91 /* BrowseItemViewCell.swift in Sources */,
+				3B8892531E313F3E0046815D /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +550,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3B83EE771E2EE070009B9E91 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B83EE781E2EE070009B9E91 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3B83EE7C1E2EE070009B9E91 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,6 +654,7 @@
 		};
 		3B83EE991E2EE070009B9E91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29AA50BC6F84C36E97CFE917 /* Pods-Grailed Code Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y7773C39R6;
@@ -424,6 +668,7 @@
 		};
 		3B83EE9A1E2EE070009B9E91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA4CC077A7BB10CA4FF4A35 /* Pods-Grailed Code Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y7773C39R6;
@@ -437,6 +682,7 @@
 		};
 		3B83EE9C1E2EE070009B9E91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB43C791E7E9AE660D8358E /* Pods-Grailed Code ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +698,7 @@
 		};
 		3B83EE9D1E2EE070009B9E91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EC4C19F6E74BE6ED5E3137 /* Pods-Grailed Code ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,6 +714,7 @@
 		};
 		3B83EE9F1E2EE070009B9E91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778EF0DAB945E9852705DCEE /* Pods-Grailed Code ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Y7773C39R6;
@@ -481,6 +729,7 @@
 		};
 		3B83EEA01E2EE070009B9E91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29A053F684BBA5ECBFF6468 /* Pods-Grailed Code ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Y7773C39R6;
@@ -512,6 +761,7 @@
 				3B83EE9A1E2EE070009B9E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B83EE9B1E2EE070009B9E91 /* Build configuration list for PBXNativeTarget "Grailed Code ChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +770,7 @@
 				3B83EE9D1E2EE070009B9E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B83EE9E1E2EE070009B9E91 /* Build configuration list for PBXNativeTarget "Grailed Code ChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +779,7 @@
 				3B83EEA01E2EE070009B9E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

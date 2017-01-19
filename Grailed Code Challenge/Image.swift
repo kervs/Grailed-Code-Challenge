@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct Image {
+    var id: String = ""
+    var url: String = ""
+
+    init (data: [String : AnyObject]) {
+        if let idString = data["id"] as? Int {
+            id = String(idString)
+        }
+
+        if let urlString = data["url"] as? String {
+            url = urlString
+        }
+    }
+} 

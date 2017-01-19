@@ -6,4 +6,33 @@
 //  Copyright © 2017 Grailed. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import SnapKit
+
+class DetailCellView: UICollectionViewCell {
+    var title: UILabel
+
+    override init(frame: CGRect) {
+        title = UILabel()
+        title.translatesAutoresizingMaskIntoConstraints = false
+
+        super.init(frame: frame)
+
+        addSubview(title)
+
+        setupLayout()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    func setupLayout() {
+        title.snp.makeConstraints { view -> Void in
+            view.top.equalToSuperview()
+            view.bottom.equalToSuperview()
+            view.left.equalToSuperview()
+            view.right.equalToSuperview()
+        }
+    }
+}

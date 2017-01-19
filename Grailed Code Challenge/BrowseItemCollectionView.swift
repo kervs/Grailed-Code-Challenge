@@ -7,17 +7,17 @@
 //
 
 import UIKit
+import CSStickyHeaderFlowLayout
+import SnapKit
 
-let BrowsePackHeaderViewIdentifier = "browsePackHeaderViewIdentifier"
+let BrowseItemHeaderViewIdentifier = "browseHeaderViewIdentifier"
 let cellReuseIdentifer = "cellReuseIdentifier"
 
-class ItemCollectionView: UICollectionView {
+class BrowseItemCollectionView: UICollectionView {
 
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(frame: frame, collectionViewLayout: ItemCollectionView.provideCollectionViewLayout())
+        super.init(frame: frame, collectionViewLayout: BrowseItemCollectionView.provideCollectionViewLayout())
 
-        collectionView?.registerClass(BrowsePackHeaderView.self, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: BrowsePackHeaderViewIdentifier)
-        collectionView?.register(BrowseItemViewCell.self, forCellWithReuseIdentifier: cellReuseIdentifer)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -28,16 +28,14 @@ class ItemCollectionView: UICollectionView {
         let screenWidth = UIScreen.main.bounds.size.width
         let layout = CSStickyHeaderFlowLayout()
 
-        let topMargin = CGFloat(0.0)
-        layout.parallaxHeaderMinimumReferenceSize = CGSizeMake(screenWidth, 118)
-        layout.parallaxHeaderReferenceSize = CGSizeMake(screenWidth, UIScreen.mainScreen().bounds.size.height/4 * 3 - 4)
+        layout.parallaxHeaderMinimumReferenceSize = CGSize(width: screenWidth, height: 40)
+        layout.parallaxHeaderReferenceSize = CGSize(width: screenWidth, height: UIScreen.main.bounds.size.height/4 * 1.2)
         layout.parallaxHeaderAlwaysOnTop = true
-
         layout.disableStickyHeaders = false
-        layout.itemSize = CGSizeMake(UIScreen.mainScreen().bounds.width - 20, cellHeight)
+        layout.itemSize = CGSize(width: (UIScreen.main.bounds.width - 30) / 2, height: 205.0)
         layout.minimumLineSpacing = 7.0
         layout.minimumInteritemSpacing = 7.0
-        layout.sectionInset = UIEdgeInsetsMake(topMargin, 0.0, 0.0, 0.0)
+        layout.sectionInset = UIEdgeInsetsMake(0.0, 10.0, 0.0, 10.0)
 
         return layout
     }
