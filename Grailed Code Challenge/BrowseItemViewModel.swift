@@ -44,6 +44,11 @@ class BrowseViewModel: NSObject {
             
 
     }
+
+    func loadItemDataAndIncreaseDataAmount() {
+        items += items
+
+    }
 }
 protocol BrowseViewModelDelegate: class {
     func browseViewModelDidUpdateItems(_ browseViewModel: BrowseViewModel, items: [Item?])

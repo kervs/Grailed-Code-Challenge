@@ -119,4 +119,18 @@ class BrowseItemsViewController: UIViewController,
     func browseViewModelDidUpdateItems(_ browseViewModel: BrowseViewModel, items: [Item?]){
         browseItemCollectionView.reloadData()
     }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        if offsetY > contentHeight - scrollView.frame.size.height {
+
+            if let  indexPath = browseItemCollectionView.indexPathsForVisibleItems.last {
+                    viewModel.loadItemDataAndIncreaseDataAmount()
+                    browseItemCollectionView.reloadData()
+
+            }
+
+        }
+    }
 }
