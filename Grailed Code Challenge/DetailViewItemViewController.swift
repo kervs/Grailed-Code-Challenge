@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 import SnapKit
 import CSStickyHeaderFlowLayout
 
@@ -60,12 +59,16 @@ class DetailViewItemViewController: UIViewController,
             return UICollectionReusableView()
         }
 
+        cell.title.isHidden = true
+
         if let url = item.mainPhoto?.url {
-            Alamofire.request(url).responseImage { response in
-                if let image = response.result.value {
-                    cell.imageView.image = image
+            URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { (data, _, _) in
+                if let data = data, let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        cell.imageView.image = image
+                    }
                 }
-            }
+            }).resume()
         }
 
         return cell

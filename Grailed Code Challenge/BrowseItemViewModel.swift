@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-
 
 class BrowseViewModel: NSObject {
     private var webservice: Webservice

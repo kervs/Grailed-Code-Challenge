@@ -8,8 +8,6 @@ target 'Grailed Code Challenge' do
   # Pods for Grailed Code Challenge
   pod 'CSStickyHeaderFlowLayout'
   pod 'SnapKit'
-  pod 'Alamofire'
-  pod 'AlamofireImage'
   pod 'Reveal-iOS-SDK'
 
   target 'Grailed Code ChallengeTests' do

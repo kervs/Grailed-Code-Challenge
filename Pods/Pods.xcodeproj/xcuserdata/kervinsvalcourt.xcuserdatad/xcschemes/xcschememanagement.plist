@@ -4,16 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AlamofireImage.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>CSStickyHeaderFlowLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,27 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5891DF260943E263770CC872FEF54BBB</key>
+		<key>8C79C85488EBB5FC753320073B18981D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
+		<key>99557CD72B17491D22DD32EFEE8FD625</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B71B9E2306C2578519C727726604B53C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F08B56EBA8994BD6F97FAD5F28F342CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
