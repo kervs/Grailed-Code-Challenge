@@ -28,8 +28,13 @@ class BrowseViewModel: NSObject {
         }
     }
 
-    func loadItemDataAndIncreaseDataAmount() {
-        items += items
+    func fetchNextData() {
+        webservice.loadNext(Item.next) { result in
+            if let items = result {
+                self.items += items
+            }
+            self.delegate?.browseViewModelDidUpdateItems(self)
+        }
     }
 }
 

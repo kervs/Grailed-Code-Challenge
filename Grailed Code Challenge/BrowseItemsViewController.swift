@@ -119,8 +119,7 @@ class BrowseItemsViewController: UIViewController,
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
         if offsetY > contentHeight - scrollView.frame.size.height {
-            viewModel.loadItemDataAndIncreaseDataAmount()
-            browseItemCollectionView.reloadData()
+            viewModel.fetchNextData()
         }
     }
 

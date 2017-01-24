@@ -27,10 +27,15 @@ struct Item {
 
     static let all = Resource<[Item]>(url: grailedItemsURL, parseJSON: { json in
         guard let jsonDictionary = json as? JSONDictionary,
-            let dictionaries = jsonDictionary["data"] as? [JSONDictionary]
-            else {
-                return nil
-        }
+            let dictionaries = jsonDictionary["data"] as? [JSONDictionary] else {return nil }
+
+        return dictionaries.flatMap(Item.init)
+    })
+
+    static let next = Resource<[Item]>(url: grailedItemsURL, parseJSON: { json in
+        guard let jsonDictionary = json as? JSONDictionary,
+            let dictionaries = jsonDictionary["data"] as? [JSONDictionary] else {return nil }
+
         return dictionaries.flatMap(Item.init)
     })
 }
