@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0579CE022F0DE868A6DF49A5 /* Pods_Grailed_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169BBD113804EE947A428620 /* Pods_Grailed_Code_ChallengeTests.framework */; };
+		3B012E801E3713390092928D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B012E7F1E3713390092928D /* WebService.swift */; };
+		3B012E821E3713F10092928D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B012E811E3713F10092928D /* Resource.swift */; };
 		3B83EE741E2EE070009B9E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83EE731E2EE070009B9E91 /* AppDelegate.swift */; };
 		3B83EE7B1E2EE070009B9E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B83EE7A1E2EE070009B9E91 /* Assets.xcassets */; };
 		3B83EE7E1E2EE070009B9E91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B83EE7C1E2EE070009B9E91 /* LaunchScreen.storyboard */; };
@@ -48,6 +50,8 @@
 		15EC4C19F6E74BE6ED5E3137 /* Pods-Grailed Code ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grailed Code ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grailed Code ChallengeTests/Pods-Grailed Code ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		169BBD113804EE947A428620 /* Pods_Grailed_Code_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grailed_Code_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AA50BC6F84C36E97CFE917 /* Pods-Grailed Code Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grailed Code Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grailed Code Challenge/Pods-Grailed Code Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		3B012E7F1E3713390092928D /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		3B012E811E3713F10092928D /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		3B83EE701E2EE070009B9E91 /* Grailed Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grailed Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B83EE731E2EE070009B9E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B83EE7A1E2EE070009B9E91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B012E831E3718DF0092928D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3B012E7F1E3713390092928D /* WebService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		3B83EE671E2EE06F009B9E91 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +146,7 @@
 				3B83EEAF1E2EE5B6009B9E91 /* Views */,
 				3B83EEAB1E2EE4A4009B9E91 /* Models */,
 				3B83EEAA1E2EE406009B9E91 /* View Models */,
+				3B012E831E3718DF0092928D /* Service */,
 				3B83EEA71E2EE3B9009B9E91 /* View Controllers */,
 				3B83EE7A1E2EE070009B9E91 /* Assets.xcassets */,
 				3B83EE7C1E2EE070009B9E91 /* LaunchScreen.storyboard */,
@@ -182,6 +195,7 @@
 			children = (
 				3B83EEAC1E2EE4FF009B9E91 /* Item.swift */,
 				3B8892521E313F3E0046815D /* Image.swift */,
+				3B012E811E3713F10092928D /* Resource.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -504,8 +518,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B012E821E3713F10092928D /* Resource.swift in Sources */,
 				3B83EEB11E2EE6B7009B9E91 /* BrowseViewHeader.swift in Sources */,
 				3B83EEB71E3008C4009B9E91 /* BrowseItemCollectionView.swift in Sources */,
+				3B012E801E3713390092928D /* WebService.swift in Sources */,
 				3B83EEA21E2EE12B009B9E91 /* BrowseItemViewModel.swift in Sources */,
 				3B83EEA61E2EE3A8009B9E91 /* DetailViewItemViewController.swift in Sources */,
 				3B83EEB91E30206B009B9E91 /* DetailItemView.swift in Sources */,

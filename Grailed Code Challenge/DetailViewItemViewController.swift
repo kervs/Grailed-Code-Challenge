@@ -53,6 +53,7 @@ class DetailViewItemViewController: UIViewController,
         super.viewDidLoad()
     }
 
+    // MARK: UICollectionViewDataSource
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         guard let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: BrowseItemHeaderViewIdentifier, for: indexPath) as? BrowseViewHeader else {
@@ -60,14 +61,12 @@ class DetailViewItemViewController: UIViewController,
         }
 
         if let url = item.mainPhoto?.url {
-
             Alamofire.request(url).responseImage { response in
                 if let image = response.result.value {
                     cell.imageView.image = image
                 }
             }
         }
-
 
         return cell
     }
@@ -90,9 +89,8 @@ class DetailViewItemViewController: UIViewController,
             cell.title.text = item.designerNames
         case 4:
             cell.title.text = item.itemDescription
-
-        default: break
-            
+        default:
+            break
         }
 
         return cell

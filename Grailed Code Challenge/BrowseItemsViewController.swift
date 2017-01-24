@@ -18,6 +18,7 @@ class BrowseItemsViewController: UIViewController,
     BrowseViewModelDelegate {
     private var browseItemCollectionView: BrowseItemCollectionView
     private var viewModel: BrowseViewModel
+    private let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
 
     init(viewModel: BrowseViewModel = BrowseViewModel()) {
         self.viewModel = viewModel
@@ -36,6 +37,10 @@ class BrowseItemsViewController: UIViewController,
         browseItemCollectionView.register(BrowseViewHeader.self, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: BrowseItemHeaderViewIdentifier)
         browseItemCollectionView.register(BrowseItemViewCell.self, forCellWithReuseIdentifier: cellReuseIdentifer)
 
+        activityIndicator.sizeToFit()
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: activityIndicator)
+
         view.addSubview(browseItemCollectionView)
 
         setupLayout()
@@ -47,8 +52,10 @@ class BrowseItemsViewController: UIViewController,
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         viewModel.fetchData()
+
+        activityIndicator.startAnimating()
     }
 
     func setupLayout() {
@@ -61,11 +68,11 @@ class BrowseItemsViewController: UIViewController,
     }
 
     // MARK: UICollectionViewDataSource
+
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         guard let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: BrowseItemHeaderViewIdentifier, for: indexPath) as? BrowseViewHeader else {
                 return UICollectionReusableView()
         }
-
         cell.imageView.image = #imageLiteral(resourceName: "Grailed")
 
         return cell
@@ -81,51 +88,46 @@ class BrowseItemsViewController: UIViewController,
         }
 
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifer, for: indexPath as IndexPath) as? BrowseItemViewCell else {
-                return UICollectionViewCell()
+            return UICollectionViewCell()
         }
 
-        if viewModel.items.count >= indexPath.row {
-            let item = viewModel.items[indexPath.row]
+        let item = viewModel.items[indexPath.row]
 
-            if let url = item.mainPhoto?.url {
-
-                Alamofire.request(url).responseImage { response in
-                    if let image = response.result.value {
-                        cell.imageView.image = image
-                    }
+        if let url = item.mainPhoto?.url {
+            Alamofire.request(url).responseImage { response in
+                if let image = response.result.value {
+                    cell.imageView.image = image
                 }
             }
-            
-            cell.layer.shouldRasterize = true
-            cell.layer.rasterizationScale = UIScreen.main.scale
-            cell.titleLabel.text = item.designerNames
-            cell.subtitleLabel.text = String(item.price)
         }
 
+        cell.layer.shouldRasterize = true
+        cell.layer.rasterizationScale = UIScreen.main.scale
+        cell.titleLabel.text = item.designerNames
+        cell.subtitleLabel.text = String(item.price)
 
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if viewModel.items.count >= indexPath.row {
-            let item = viewModel.items[indexPath.row]
-            let vc = DetailViewItemViewController(item)
-            navigationController?.pushViewController(vc, animated: true)
-        } else {
-            return
-        }
-    }
-
-    func browseViewModelDidUpdateItems(_ browseViewModel: BrowseViewModel, items: [Item?]){
-        browseItemCollectionView.reloadData()
+        let item = viewModel.items[indexPath.row]
+        let vc = DetailViewItemViewController(item)
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
         if offsetY > contentHeight - scrollView.frame.size.height {
-                viewModel.loadItemDataAndIncreaseDataAmount()
-                browseItemCollectionView.reloadData()
+            viewModel.loadItemDataAndIncreaseDataAmount()
+            browseItemCollectionView.reloadData()
         }
+    }
+
+    // MARK: BrowseViewModelDelegate
+
+    func browseViewModelDidUpdateItems(_ browseViewModel: BrowseViewModel){
+        browseItemCollectionView.reloadData()
+        activityIndicator.stopAnimating()
     }
 }

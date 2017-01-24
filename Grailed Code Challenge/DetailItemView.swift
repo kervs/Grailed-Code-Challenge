@@ -25,17 +25,17 @@ class DetailItemView: UICollectionView {
 
     class func provideCollectionViewLayout() -> UICollectionViewFlowLayout {
         let screenWidth = UIScreen.main.bounds.size.width
-        let layout = CSStickyHeaderFlowLayout()
 
+        let layout = CSStickyHeaderFlowLayout()
         layout.parallaxHeaderMinimumReferenceSize = CGSize(width: screenWidth, height: 118)
         layout.parallaxHeaderReferenceSize = CGSize(width: screenWidth, height: UIScreen.main.bounds.size.height/4)
         layout.parallaxHeaderAlwaysOnTop = true
         layout.disableStickyHeaders = false
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.width - 20, height: 105)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width - 20, height: 75)
         layout.minimumLineSpacing = 7.0
         layout.minimumInteritemSpacing = 7.0
         layout.sectionInset = UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0)
-        
+
         return layout
     }
     

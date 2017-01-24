@@ -92,6 +92,5 @@ class BrowseItemViewCell: UICollectionViewCell {
             view.width.equalTo(titleLabel.snp.width)
         }
     }
-
 }
 

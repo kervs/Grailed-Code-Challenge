@@ -26,8 +26,8 @@ class BrowseItemCollectionView: UICollectionView {
 
     class func provideCollectionViewLayout() -> UICollectionViewFlowLayout {
         let screenWidth = UIScreen.main.bounds.size.width
+        
         let layout = CSStickyHeaderFlowLayout()
-
         layout.parallaxHeaderMinimumReferenceSize = CGSize(width: screenWidth, height: 40)
         layout.parallaxHeaderReferenceSize = CGSize(width: screenWidth, height: UIScreen.main.bounds.size.height/4 * 1.2)
         layout.parallaxHeaderAlwaysOnTop = true

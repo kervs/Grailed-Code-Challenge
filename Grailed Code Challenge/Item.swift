@@ -8,7 +8,10 @@
 
 import Foundation
 
-class Item: NSObject {
+let grailedItemsURL = URL(string:"https://www.grailed.com/api/listings/grailed?page=%7B1,2,3...%7D")!
+typealias JSONDictionary = [String: AnyObject]
+
+struct Item {
     var id: String = ""
     var title: String = ""
     var createdAt: String = ""
@@ -22,8 +25,18 @@ class Item: NSObject {
     var category: String?
     var subcategory: String?
 
+    static let all = Resource<[Item]>(url: grailedItemsURL, parseJSON: { json in
+        guard let jsonDictionary = json as? JSONDictionary,
+            let dictionaries = jsonDictionary["data"] as? [JSONDictionary]
+            else {
+                return nil
+        }
+        return dictionaries.flatMap(Item.init)
+    })
+}
 
-    init (data: [String : AnyObject]) {
+extension Item {
+    init (data: JSONDictionary) {
         if let idString = data["id"] as? Int {
             id = String(idString)
         }
@@ -56,7 +69,6 @@ class Item: NSObject {
             for urlData in imageURLs {
                 let image = Image(data: urlData)
                 photos.append(image)
-
             }
 
             if let firstPhoto = photos.first {
@@ -64,5 +76,4 @@ class Item: NSObject {
             }
         }
     }
-
 }
